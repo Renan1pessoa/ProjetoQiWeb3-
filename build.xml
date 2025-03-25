@@ -3,3 +3,39 @@
     <description>Builds, tests, and runs the project ProjetoQiWeb3.</description>
     <import file="nbproject/build-impl.xml"/>
 </project>
+<project name="ProjetoQiWeb3" default="deploy" basedir=".">
+    <property name="src.dir" value="src"/>
+    <property name="web.dir" value="web"/>
+    <property name="build.dir" value="build"/>
+    <property name="dist.dir" value="dist"/>
+    <property name="war.file" value="${dist.dir}/ProjetoQiWeb3.war"/>
+
+    <path id="classpath">
+        <fileset dir="lib">
+            <include name="**/*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="${build.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="classpath"/>
+    </target>
+
+    <target name="war" depends="compile">
+        <mkdir dir="${dist.dir}"/>
+        <war destfile="${war.file}" webxml="${web.dir}/WEB-INF/web.xml">
+            <fileset dir="${web.dir}"/>
+            <lib dir="lib"/>
+            <classes dir="${build.dir}"/>
+        </war>
+    </target>
+
+    <target name="deploy" depends="war">
+        <copy file="${war.file}" todir="target"/>
+    </target>
+</project>

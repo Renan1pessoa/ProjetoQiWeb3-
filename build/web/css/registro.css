@@ -1,0 +1,229 @@
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins', sans-serif;
+   background: url('../images/banner.jpeg') no-repeat center center fixed;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   flex-direction: column;
+   overflow: hidden;
+}
+.container {
+   background: white;
+   width: 1200px;
+   height: 380px;
+   padding: 20px;
+   border-radius: 15px;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+   position: relative;
+   bottom: 20px;
+}
+.logo {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.logo img {
+   width: 130px;
+}
+.logo-h1 {
+   font-size: 26px;
+   right: 30px;
+   bottom: 10px;
+   position: relative;
+}
+.logo-h2 {
+   font-size: 16px;
+   right: 130px;
+   bottom: -20px;
+   position: relative;
+}
+
+.inputs {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 5px 40px; /* Ajuste fino do espaçamento */
+   margin-top: 20px;
+}
+
+/* Ajuste individual para cada label */
+.label-email {
+   position: relative;
+   top: 20px; /* Ajuste conforme necessário */
+   right: 5px;
+   font-weight: bold;
+}
+
+.label-nome {
+   position: relative;
+   top: -10px;
+   left: 624px;
+   font-weight: bold;
+}
+
+.label-senha {
+   position: relative;
+   top: 35px;
+   right: 5px;
+   font-weight: bold;
+}
+
+.label-telefone {
+   position: relative;
+   top: 80px;
+   right: 5px;
+   font-weight: bold;
+}
+
+.label-endereco {
+   position: relative;
+   top: -25px;
+   left: 622px;
+   font-weight: bold;
+}
+
+/* Ajuste individual para cada input */
+.input-email {
+   position: relative;
+   top: 45px; /* Ajuste conforme necessário */
+   right: 630px;
+   width: 95%;
+   height: 125%;
+   border: 1px solid #ccc;
+   border-radius: 25px;
+   background: #ddd;
+}
+
+.input-nome {
+   position: relative;
+   top: 15px; /* Ajuste conforme necessário */
+   width: 95%;
+   height: 125%;
+   border: 1px solid #ccc;
+   border-radius: 25px;
+   background: #ddd;
+}
+
+.input-senha {
+   position: relative;
+   top: 60px;
+   right: 630px;
+   width: 95%;
+   height: 125%;
+   border: 1px solid #ccc;
+   border-radius: 25px;
+   background: #ddd;
+}
+
+.input-telefone {
+   position: relative;
+   top: 100px;
+   right: 630px;
+   width: 95%;
+   height: 125%;
+   border: 1px solid #ccc;
+   border-radius: 25px;
+   background: #ddd;
+}
+
+.input-endereco {
+   position: relative;
+   top: 1px;
+   width: 95%;
+   height: 125%;
+   border: 1px solid #ccc;
+   border-radius: 25px;
+   background: #ddd;
+}
+
+.button-container {
+   display: flex;
+   justify-content: center; /* Mantém centralizado */
+   margin-top: 20px;
+   transform: translateY(45px); /* Mova o botão 20px para baixo */
+}
+
+.button {
+   background: #a55040;
+   color: white;
+   padding: 15px 30px; /* Aumente o padding horizontal e vertical para dar um formato mais quadrado */
+   border: none;
+   border-radius: 5px; /* Reduza o border-radius para deixar mais quadrado (0px também funciona para um botão reto) */
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: 600;
+   transform: translateX(270px); /* Mova o botão 20px para a direita */
+   bottom: 25px;
+   position: relative;
+}
+
+.button-cancelar {
+   background: #a55040;
+   color: white;
+   padding: 15px 40px; /* Aumente o padding horizontal e vertical para dar um formato mais quadrado */
+   border: none;
+   border-radius: 5px; /* Reduza o border-radius para deixar mais quadrado (0px também funciona para um botão reto) */
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: 600;
+   transform: translateX(320px); /* Mova o botão 20px para a direita */
+   bottom: 25px;
+   position: relative;
+}
+
+.social-icons {
+  position: absolute;
+  top: 30px;
+  right: 60px;
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+   width: 35px;
+   cursor: pointer;
+   height: auto;
+}
+
+.whatsapp-img {
+    width: 20px;
+    position: relative;
+    height: auto;
+}
+
+.instagram-img {
+    width: 20px;
+    position: relative;
+    height: auto;
+}
+
+.image-container {
+   text-align: center; /* Garante que a imagem fique centralizada */
+   margin-top: 20px; /* Espaço acima da imagem */
+   position: relative;
+   top: 30px;
+}
+
+.fan-img {
+   width: 40px; /* Tamanho ajustado da imagem */
+   height: 40px; /* Tamanho ajustado da imagem */
+   display: block; /* Faz a imagem ocupar toda a largura disponível */
+   margin-left: auto; /* Centraliza horizontalmente */
+   margin-right: auto; /* Centraliza horizontalmente */
+}
+
+footer { 
+   background-color: #222;
+   padding: 15px 0;
+   text-align: center;
+   color: white;
+   position: relative;
+   height: 40px;
+   width: 2000px;
+   right: 400px;
+   margin-top: auto;
+   top: 200px;
+}

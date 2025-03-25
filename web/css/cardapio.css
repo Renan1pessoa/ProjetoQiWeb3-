@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+.logo img {
+    width: 80px;
+    height: auto;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.active {
+    border-bottom: 2px solid #6DAA6F;
+}
+.hero {
+    background: url('../images/banner.jpeg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+.menu {
+    padding: 40px;
+}
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.item {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.item button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #6DAA6F;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+footer {
+    background: #111;
+    padding: 20px;
+}
+.social-icons img {
+    width: 30px;
+    margin: 10px;
+}

@@ -1,0 +1,458 @@
+html, body {
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex-grow: 1; /* Faz o conteúdo crescer e ocupar o espaço restante */
+  overflow-y: auto;
+  padding-bottom: 43.17px; /* Espaço para o footer */
+  box-sizing: border-box;
+}
+
+header, footer {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Garantir que o conteúdo da página ocupe toda a largura */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section, main {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-brand {
+  margin-top: 105px;
+  display: inline-block;
+  margin-left: -290px;
+  font-weight: bold;
+  font-size: 25px;
+  position: relative;
+  top: 60px;
+  right: 95px;
+}
+
+.japanese-text {
+  color: white;
+  margin-top: 180px;
+  bottom: 0px;
+  right: 195px;
+  position: relative;
+}
+
+/* Estilo para a logo */
+.logo {
+  max-width: 250px;  /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  /* Remove o 'position: absolute' para permitir que o flexbox ou o grid alinhe a logo automaticamente */
+  margin-right: 110px;
+  margin-bottom: 60px;
+  position: relative;
+  right: 100px;
+  z-index: 1;  /* Caso precise garantir que o logo fique acima de outros elementos */
+}
+
+.navbar {
+  background-color: transparent !important;
+  border: none;
+  box-shadow: none;
+  display: flex; /* Flexbox para facilitar o alinhamento */
+  justify-content: space-between; /* Espaço entre a logo e os links */
+  align-items: center; /* Alinha os itens verticalmente */
+  padding: 10px 30px;
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 0;
+  color: white;
+}
+
+.navbar .container {
+  position: relative;
+  text-align: center;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: white !important;
+  font-family: 'Poppins', sans-serif !important;
+  text-align: center;
+  bottom: 60px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-item a {
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  color: white;
+}
+
+.nav-item a[href="#index.html"] {
+  border-bottom: 2px solid #ac5045;
+  font-size: 23px;
+  margin-right: 20px;
+  margin-bottom: 60px;
+  left: 80px;
+  position: relative;
+}
+
+.nav-item a[href="#sobre"] {
+  font-size: 23px;
+  margin-right: 20px;
+  left: 80px;
+  position: relative;
+}
+
+.nav-item a[href="cardapio.html"] {
+  font-size: 23px;
+  margin-right: 20px;
+  left: 80px;
+  position: relative;
+}
+
+.nav-link {
+  font-size: 23px;
+}
+
+.nav-item a:hover {
+  color: #ac5045;
+}
+
+.imagem-lateral {
+  position: absolute;
+  right: -120px;
+  top: 10%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: auto;
+}
+
+header {
+  background: url('../images/banner.jpeg') no-repeat center center/cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  bottom: 250px;
+}
+
+.imagem-destaque {
+  width: 400px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  left: 500px;
+  bottom: 120px;
+}
+
+.imagens-esquerda {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.imagem-esquerda {
+  width: 50px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 145px;
+}
+
+.delivery {
+  font-size: 15px;
+  color: white;
+  position: relative;
+  top: 250px;
+}
+
+.contato {
+  font-size: 40px;
+  color: white;
+  position: relative;
+  top: 235px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  top: 240px; /* Você pode remover ou ajustar esse valor se não for necessário */
+  width: auto; /* Ajusta a largura do botão conforme o conteúdo */
+  max-width: 300px; /* Define uma largura máxima, se necessário */
+}
+
+.btn-warning {
+  background-color: #dfa05d;
+  color: #1a1a1a;
+}
+
+.btn-warning:hover {
+  background-color: #e6b800;
+}
+
+.texto-botao {
+  text-align: left;
+  padding-left: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.icon-botao {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  float:right;
+}
+
+.custom-hr {
+  border: 0;
+  color: #1a1a1a;
+  background-color: #1a1a1a;
+  height: 3px;
+  padding: 50px 30px;
+  width: 100%;
+  border-color: #1a1a1a;
+  margin: 20px 0;
+  position: relative;
+  bottom: 270px;
+  z-index: 9999;
+  fill: #1a1a1a;
+}
+
+.top-center-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.sobre-section {
+  position: relative;
+  bottom: 150px;
+}
+
+.imagem-direita img {
+  width: 300px;
+  height: auto;
+  position: relative;
+  bottom: 360px;
+  left: 400px;
+}
+
+.sobre-boas-vindas {
+  text-align: center;
+  right: 250px;
+  font-size: 15px;
+  color: #867e7e;
+  position: relative;
+  bottom: 170px;
+}
+
+.sobre-titulo {
+  position: relative;
+  color: #ac5045;
+  font-weight: bold;
+  bottom: 170px;
+  left: -240px;
+}
+
+.customizado-hr {
+  width: 5%;
+  height: 3px;
+  background-color: #867e7e;
+  border: none;
+  position: relative;
+  bottom: 150px;
+  right: -250px;
+  transform: translateX(-50px);
+}
+
+.sobre-descricao {
+  position: relative;
+  right: 200px;
+  bottom: 100px;
+}
+
+.sobre-texto {
+  position: relative;
+  right: 250px;
+  bottom: 100px;
+}
+
+.sobre-botao {
+  background-color: #ac5045;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  position: relative;
+  right: 240px;
+  top: -30px;
+}
+
+.sobre-botao:hover {
+  background-color: #e64a19;
+  transform: scale(1.1);
+}
+
+.sobre-botao:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sobre-botao:active {
+  transform: scale(0.98);
+}
+
+#cardapio {
+  background-color: #1a1a1a;
+  color: white;
+  min-height: 350px;
+  position: relative;
+  bottom: 550px;
+}
+
+.img-cardapio {
+  width: 150px;
+  height: auto;
+  position: relative;
+  bottom: 30px;
+}
+
+.cardapio-titulo {
+  font-weight: bold;
+  top: -20px;
+  position: relative;
+}
+
+.cardapio-descricao {
+  font-size: 14px;
+  top: -20px;
+  position: relative;
+}
+
+.custo-hr {
+  width: 5%;
+  height: 3px;
+  background-color: white;
+  border: 1px;
+  top: -10px;
+  right: -850px;
+  position: relative;
+}
+
+.cardapio-botao {
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  border: 2px solid #fff;
+  color: white;
+  top: 10px;
+  position: relative;
+}
+
+.cardapio-botao:hover {
+  background-color: #fff;
+  color: #1a1a1a;
+  border: 2px solid #1a1a1a;
+}
+
+.depoimentos-titulo {
+  font-weight: bold;
+  position: relative;
+  bottom: 60px;
+  font-size: 35px;
+}
+
+.depoimentos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.depoimento-item {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+  transition: transform 0.3s ease-in-out;
+}
+
+.depoimento-item:hover {
+  transform: translateY(-10px);
+}
+
+.depoimento-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.depoimento-item p {
+  font-size: 16px;
+  color: #555;
+}
